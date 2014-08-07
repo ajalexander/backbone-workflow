@@ -1,0 +1,11 @@
+{
+	"name": "api",
+	"description": "REST API for example",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "4.6.x",
+		"mongoose": "3.8.x",
+		"body-parser": "1.5.x"
+	},
+	"main": "src/index.js"
+}
