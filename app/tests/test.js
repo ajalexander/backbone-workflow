@@ -13,6 +13,9 @@ var specs = [
 	"spec/views/issueSpec",
 	"spec/views/issuesSpec",
 	"spec/views/planSearchSpec",
+
+	// Workflows
+	"spec/workflows/createClaimSpec",
 ];
 
 require(["../js/appRequireConfig.js"], function() {
