@@ -20,7 +20,7 @@ var specs = [
 
 require(["../js/appRequireConfig.js"], function() {
 	require(["./testRequireConfig.js"], function() {
-		require(["boot"], function () {
+		require(["boot", "mock-ajax"], function () {
 			// Load the specs
 			require(specs, function () {
 				// Initialize the HTML Reporter and execute the environment (setup by `boot.js`)

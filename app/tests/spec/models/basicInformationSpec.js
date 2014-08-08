@@ -1,4 +1,4 @@
-define(["models/basicInformation"], function( BasicInformation ){
+define(["models/basicInformation", "app/service"], function( BasicInformation ){
 	describe("Model :: BasicInformation", function() {
 
 		describe("initialize", function() {
@@ -43,6 +43,27 @@ define(["models/basicInformation"], function( BasicInformation ){
 				var model = new BasicInformation({}, options);
 
 				expect(model.get("policyNumber")).toBe(options.policy.policyNumber);
+			});
+		});
+
+		describe("advance", function() {
+			var options;
+			var model;
+			
+			beforeEach(function() {
+				options = {
+					policy: {},
+					workflow: {
+						next: function() {}
+					}
+				};
+				model = new BasicInformation({}, options);
+			});
+
+			it("should call next on the workflow", function() {
+				spyOn(model.workflow, "next");
+				model.advance();
+				expect(model.workflow.next.calls.count()).toBe(1);
 			});
 		});
 	});

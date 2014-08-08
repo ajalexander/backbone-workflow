@@ -1,4 +1,4 @@
-define(["models/confirmation"], function( Confirmation ){
+define(["models/confirmation", "app/service"], function( Confirmation ){
 	describe("Model :: Confirmation", function() {
 
 		describe("initialize", function() {
