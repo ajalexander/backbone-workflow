@@ -4,6 +4,10 @@ An example of using workflows within Backbone rather than just the standard rout
 
 The project also includes a number of other technologies (listed below).
 
+## Corresponding Blog Posts
+
+The code corresponds to a [series of blog posts](http://www.sep.com/sep-blog/2014/08/13/building-an-application-with-backbone-workflows/) that explain (step by step) what is occurring in the code.
+
 ## Technology Stack
 
 The example uses:
